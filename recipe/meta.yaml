@@ -37,6 +37,8 @@ requirements:
     - bokeh
     - traitlets
     - pyjwt
+    - python-multipart
+    - python-slugify
 
 test:
   imports:
