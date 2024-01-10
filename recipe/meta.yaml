@@ -1,5 +1,5 @@
 {% set name = "jhub-apps" %}
-{% set version = "0.2" %}
+{% set version = "2024.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jhub_apps-{{ version }}.tar.gz
-  sha256: bcab358741bbdecd31156ead6142f70da8ab806bb759c6be5e2716cf01ae3a53
+  sha256: 0620558e7bb1cb6698a8fd046fc3d44d6447d1929bbe122ab50dda15863b578f
 
 build:
   entry_points:
@@ -37,6 +37,8 @@ requirements:
     - bokeh
     - traitlets
     - pyjwt
+    - python-multipart
+    - python-slugify
 
 test:
   imports:
