@@ -39,6 +39,8 @@ requirements:
     - pyjwt
     - python-multipart
     - python-slugify
+    - cachetools
+    - structlog
 
 test:
   imports:
