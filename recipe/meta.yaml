@@ -1,5 +1,5 @@
 {% set name = "jhub-apps" %}
-{% set version = "2024.1.3" %}
+{% set version = "2024.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jhub_apps-{{ version }}.tar.gz
-  sha256: f71f3ff2005c1f36a0aa017184c0c7032d634f35d3af2ad31ca83362d7bcb28b
+  sha256: 37b9e53c7290344758f16c2e8cb79676bd94b1c24599001ec4a66374baff14f3
 
 build:
   entry_points:
