@@ -144,4 +144,6 @@ Feedstock Maintainers
 =====================
 
 * [@aktech](https://github.com/aktech/)
+* [@costrouc](https://github.com/costrouc/)
+* [@dcmcand](https://github.com/dcmcand/)
 
