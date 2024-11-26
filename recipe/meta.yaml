@@ -1,5 +1,6 @@
 {% set name = "jhub-apps" %}
 {% set version = "2024.10.1" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +9,6 @@ package:
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jhub_apps-{{ version }}.tar.gz
   sha256: 43118d3dce2ed4fe385a0d399770f13220da267cd60b1bc4e3968d3bb78db55c
-
 
 build:
   entry_points:
@@ -19,11 +19,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - hatchling
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - hatchling
     - hatch
     - requests
@@ -42,6 +42,7 @@ requirements:
     - python-slugify
     - cachetools
     - structlog
+    - conda-project
 
 test:
   imports:
@@ -50,6 +51,7 @@ test:
     - pip check
     - japps --help
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
