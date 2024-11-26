@@ -37,7 +37,7 @@ requirements:
     - panel
     - bokeh
     - traitlets
-    - pyjwt
+    - pyjwt <2.10.0
     - python-multipart
     - python-slugify
     - cachetools
