@@ -1,13 +1,14 @@
 {% set name = "jhub-apps" %}
-{% set version = "2024.8.1" %}
+{% set version = "2024.10.1" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jhub_apps-{{ version }}.tar.gz
-  sha256: f38a94828c3d8e447495f613cc4f34af41202e5565e9de88a6cbb9a5866ca333
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jhub_apps-{{ version }}.tar.gz
+  sha256: 43118d3dce2ed4fe385a0d399770f13220da267cd60b1bc4e3968d3bb78db55c
 
 build:
   entry_points:
@@ -18,11 +19,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - hatchling
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - hatchling
     - hatch
     - requests
@@ -32,7 +33,7 @@ requirements:
     - jupyter
     - plotlydash-tornado-cmd
     - bokeh-root-cmd
-    - jhsingle-native-proxy
+    - jhsingle-native-proxy ==0.8.2
     - panel
     - bokeh
     - traitlets
@@ -41,6 +42,7 @@ requirements:
     - python-slugify
     - cachetools
     - structlog
+    - conda-project
 
 test:
   imports:
@@ -49,6 +51,7 @@ test:
     - pip check
     - japps --help
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
