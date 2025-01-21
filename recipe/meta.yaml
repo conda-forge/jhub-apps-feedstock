@@ -1,5 +1,5 @@
 {% set name = "jhub-apps" %}
-{% set version = "2024.11.1" %}
+{% set version = "2024.12.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jhub_apps-{{ version }}.tar.gz
-  sha256: 54a14e5c1b185c7467be9135271336006a4a272897b931b03af798565fd2a83d
+  sha256: e12ac8778962f02eddd2af961a092c35ed223c2a250db22aeadee12ad8a6c394
 
 build:
   entry_points:
@@ -33,7 +33,7 @@ requirements:
     - jupyter
     - plotlydash-tornado-cmd
     - bokeh-root-cmd
-    - jhsingle-native-proxy ==0.8.2
+    - jhsingle-native-proxy ==0.8.3
     - panel
     - bokeh
     - traitlets
