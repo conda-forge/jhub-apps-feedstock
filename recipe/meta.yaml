@@ -9,6 +9,7 @@ package:
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jhub_apps-{{ version }}.tar.gz
   sha256: e12ac8778962f02eddd2af961a092c35ed223c2a250db22aeadee12ad8a6c394
+
 build:
   entry_points:
     - japps = jhub_apps.main:app
@@ -32,7 +33,7 @@ requirements:
     - jupyter
     - plotlydash-tornado-cmd
     - bokeh-root-cmd
-    - jhsingle-native-proxy ==0.8.2
+    - jhsingle-native-proxy ==0.8.3
     - panel
     - bokeh
     - traitlets
