@@ -3,11 +3,15 @@ About jhub-apps-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jhub-apps-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/nebari-dev/jhub-apps/
+Home: https://jhub-apps.nebari.dev/
 
 Package license: BSD-3-Clause
 
 Summary: JupyterHub Apps
+
+Development: https://github.com/nebari-dev/jhub-apps
+
+Documentation: https://jhub-apps.nebari.dev/docs/intro
 
 Current build status
 ====================
@@ -146,4 +150,5 @@ Feedstock Maintainers
 * [@aktech](https://github.com/aktech/)
 * [@costrouc](https://github.com/costrouc/)
 * [@dcmcand](https://github.com/dcmcand/)
+* [@rxm7706](https://github.com/rxm7706/)
 
