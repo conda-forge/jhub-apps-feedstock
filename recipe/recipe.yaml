@@ -54,7 +54,9 @@ tests:
       imports:
         - jhub_apps
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - 3.*
   - requirements:
       run:
         - pip
