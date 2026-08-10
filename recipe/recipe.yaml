@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: jhub-apps
-  version: "2026.7.1"
+  version: "2026.8.1"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/jhub_apps-${{ version }}.tar.gz
-  sha256: 73010e946fc07598c8596ac7013df95e186bf6ab6081ae67698186819b202d5a
+  sha256: 0b3da184008e00e864b5d203d6d2e76b8188ecfbab1296af8692b9f1666d9647
 
 build:
   number: 0
